@@ -11,7 +11,8 @@
 </p>
 <p>
 	<strong>First post</strong>
-	<%= @user.microposts.first.content %>
+	<!-- The line below won't work in production because there is no data in the databased. -->
+	<!-- <%= @user.microposts.first.content %> -->
 </p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
